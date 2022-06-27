@@ -18,8 +18,5 @@
   "homepage": "https://github.com/Mizzery414/naTours#readme",
   "devDependencies": {
     "node-sass": "^7.0.1"
-  },
-  "dependencies": {
-    "jquery": "^3.6.0"
   }
 }
