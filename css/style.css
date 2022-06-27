@@ -44,7 +44,7 @@ body {
   text-align: center; }
 
 .heading-primary {
-  color: #ffffff;
+  color: #fff;
   text-transform: uppercase;
   margin-bottom: 6rem;
   backface-visibility: hidden; }
@@ -124,7 +124,7 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
 .btn--white {
-  background-color: #ffffff;
+  background-color: #fff;
   color: #777; }
 
 .btn::after {
@@ -140,7 +140,7 @@ body {
   transition: all 0.75s; }
 
 .btn--white::after {
-  background-color: #ffffff; }
+  background-color: #fff; }
 
 .btn:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
