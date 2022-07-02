@@ -15,8 +15,5 @@
   "bugs": {
     "url": "https://github.com/Mizzery414/naTours/issues"
   },
-  "homepage": "https://github.com/Mizzery414/naTours#readme",
-  "devDependencies": {
-    "node-sass": "^7.0.1"
-  }
+  "homepage": "https://github.com/Mizzery414/naTours#readme"
 }

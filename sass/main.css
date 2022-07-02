@@ -52,7 +52,7 @@ body {
 }
 
 .heading-primary {
-  color: red;
+  color: #fff;
   text-transform: uppercase;
   margin-bottom: 6rem;
   -webkit-backface-visibility: hidden;
@@ -186,7 +186,7 @@ body {
 }
 
 .btn--white {
-  background-color: red;
+  background-color: #fff;
   color: #777;
 }
 
@@ -204,7 +204,7 @@ body {
 }
 
 .btn--white::after {
-  background-color: red;
+  background-color: #fff;
 }
 
 .btn:hover::after {
