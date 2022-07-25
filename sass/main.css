@@ -152,6 +152,10 @@ body {
   text-align: center;
 }
 
+.u-margin-bottom-8 {
+  margin-bottom: 8rem;
+}
+
 /* BUTTON SECTION */
 .btn:visited, .btn:link {
   text-transform: uppercase;
@@ -203,7 +207,6 @@ body {
 
 .row {
   max-width: 114rem;
-  background-color: #eee;
   margin: 0 auto;
 }
 .row:not(:last-child) {
@@ -215,7 +218,6 @@ body {
   clear: both;
 }
 .row [class^=col-] {
-  background-color: orangered;
   float: left;
 }
 .row [class^=col-]:not(:last-child) {
