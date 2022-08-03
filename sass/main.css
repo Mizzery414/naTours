@@ -256,7 +256,7 @@ body {
   height: 50rem;
 }
 .card_side {
-  color: white;
+  color: #aaa;
   font-size: 2rem;
   height: 50rem;
   transition: all 0.8s ease;
@@ -277,6 +277,12 @@ body {
 }
 .card_side--back-1 {
   background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
+}
+.card_side--back-2 {
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
+}
+.card_side--back-3 {
+  background-image: linear-gradient(to right bottom, #2998ff, #5643fa);
 }
 .card:hover .card_side--front {
   transform: rotateY(-180deg);

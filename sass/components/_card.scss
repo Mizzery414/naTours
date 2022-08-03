@@ -5,7 +5,7 @@
   height: 50rem;
 
   &_side {
-    color: white;
+    color: #aaa;
     font-size: 2rem;
     height: 50rem;
     transition: all 0.8s ease;
@@ -29,6 +29,22 @@
           to right bottom,
           $color-secondary-light,
           $color-secondary-dark
+        );
+      }
+
+      &-2 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-primary-light,
+          $color-primary-dark
+        );
+      }
+
+      &-3 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-tertiary-light,
+          $color-tertiary-dark
         );
       }
     }
