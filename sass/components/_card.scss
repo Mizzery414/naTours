@@ -5,7 +5,7 @@
   position: relative;
   height: 52rem;
 
-  &_side {
+  &__side {
     height: 52rem;
     transition: all 0.8s ease;
     position: absolute;
@@ -50,16 +50,16 @@
     }
   }
 
-  &:hover &_side--front {
+  &:hover &__side--front {
     transform: rotateY(-180deg);
   }
 
-  &:hover &_side--back {
+  &:hover &__side--back {
     transform: rotateY(0);
   }
 
   // FRONT SIDE STYLING
-  &_picture {
+  &__picture {
     background-size: cover;
     height: 23rem;
     background-blend-mode: screen;
@@ -96,7 +96,7 @@
     }
   }
 
-  &_heading {
+  &__heading {
     font-size: 2.8rem;
     font-weight: 300;
     text-transform: uppercase;
@@ -108,7 +108,7 @@
     width: 75%;
   }
 
-  &_heading-span {
+  &__heading-span {
     padding: 1rem 1.5rem;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
@@ -138,7 +138,7 @@
     }
   }
 
-  &_details {
+  &__details {
     padding: 3rem;
 
     ul {
@@ -159,7 +159,7 @@
   }
 
   //BACK SIDE STYLING
-  &_cta {
+  &__cta {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -168,18 +168,18 @@
     text-align: center;
   }
 
-  &_price-box {
+  &__price-box {
     text-align: center;
     margin-bottom: 4rem;
     color: $color-white;
   }
 
-  &_price-only {
+  &__price-only {
     font-size: 1.4rem;
     text-transform: uppercase;
   }
 
-  &_price-value {
+  &__price-value {
     font-size: 6rem;
     font-weight: 100;
   }
