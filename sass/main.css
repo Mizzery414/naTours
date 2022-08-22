@@ -1,3 +1,22 @@
+/* MEDIA QUERY MANAGER
+
+standard pixel sizes
+  0 - 600px:    Cellphone
+  600-900px:    Tablet - portrait mode
+  900-1200px:   Tablet - landscape mode
+  1200-1800px:  Normal styles applied
+  1200+px:      Big desktop
+
+$breakpoint argument choices
+  -phone
+  -tab-port
+  -tab-land
+  -big-desktop
+
+1em = 16px
+  600/16 = 36.5em
+
+*/
 @-webkit-keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -81,6 +100,21 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+}
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
 }
 
 /* default font size 16px, we want 10px root font size (helps with REM calculations later. 16/10 = .625 or 62.5% */
