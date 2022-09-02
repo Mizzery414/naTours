@@ -476,6 +476,44 @@ body {
   font-size: 6rem;
   font-weight: 100;
 }
+@media (max-width: 56.25em) {
+  .card {
+    height: auto;
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  }
+  .card__side {
+    height: auto;
+    position: relative;
+    box-shadow: none;
+  }
+  .card__side--back {
+    transform: rotateY(0);
+    -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+  }
+  .card:hover .card__side--front {
+    transform: rotateY(0);
+  }
+  .card__details {
+    padding: 1rem 3rem;
+  }
+  .card__cta {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0);
+    width: 100%;
+    padding: 7rem 4rem 4rem 4rem;
+  }
+  .card__price-box {
+    margin-bottom: 3rem;
+  }
+  .card__price-value {
+    font-size: 4rem;
+  }
+}
 
 .composition {
   position: relative;
@@ -586,8 +624,10 @@ body {
   display: block;
   transition: all 0.3s;
 }
-.form__input::-webkit-input-placeholder {
-  color: #999;
+@media (max-width: 56.25em) {
+  .form__input {
+    width: 100%;
+  }
 }
 .form__input:focus {
   outline: none;
@@ -596,6 +636,9 @@ body {
 }
 .form__input:focus:invalid {
   border-bottom: 3px solid #ff7730;
+}
+.form__input::-webkit-input-placeholder {
+  color: #999;
 }
 .form__label {
   font-size: 1.2rem;
@@ -623,6 +666,12 @@ body {
 .form__radio-group {
   width: 49%;
   display: inline-block;
+}
+@media (max-width: 56.25em) {
+  .form__radio-group {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
 }
 .form__radio-input {
   display: none;
@@ -688,9 +737,26 @@ body {
   transform: translate(-50%, -50%) scale(0);
   transition: all 0.5s 0.25s;
 }
+@media (max-width: 56.25em) {
+  .popup__content {
+    width: 85%;
+  }
+}
 .popup__left {
   width: 33.33333333%;
   display: table-cell;
+}
+@media (max-width: 75em) {
+  .popup__left {
+    background: url(/imgs/nat-8.jpg);
+    background-size: cover;
+    background-position: center center;
+  }
+}
+@media (max-width: 37.5em) {
+  .popup__left {
+    display: none;
+  }
 }
 .popup__right {
   width: 66.66666666%;
@@ -701,6 +767,12 @@ body {
 .popup__img {
   display: block;
   width: 100%;
+}
+@media (max-width: 75em) {
+  .popup__img {
+    display: none;
+    width: 0;
+  }
 }
 .popup__text {
   font-size: 1.4rem;
@@ -714,6 +786,12 @@ body {
   -ms-hyphens: auto;
   -webkit-hyphens: auto;
   hyphens: auto;
+}
+@media (max-width: 37.5em) {
+  .popup__text {
+    column-count: 1;
+    -moz-column-count: 1;
+  }
 }
 .popup:target {
   opacity: 1;
@@ -738,6 +816,23 @@ body {
   color: #55c57a;
 }
 
+/* 1. What do I want to happen?
+      on tab-land size: 
+        -images move to top of page, split 50% each
+        -text below, also sharing 50% screen
+
+      on tab-port size:  
+        -same as tab-land
+
+      on phone size: 
+        pictures disappear
+
+    2. How do I make this happen?
+      display none on image at phone size
+      display none on bottom image on tab-port size
+      make only 1 column 
+
+  */
 .story {
   width: 75%;
   margin: 0 auto;
@@ -748,6 +843,18 @@ body {
   padding-left: 9rem;
   font-size: 1.6rem;
   transform: skewX(-12deg);
+}
+@media (max-width: 56.25em) {
+  .story {
+    width: 100%;
+    padding: 4rem;
+    padding-left: 7rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .story {
+    transform: skewX(0);
+  }
 }
 .story__shape {
   width: 15rem;
@@ -760,6 +867,11 @@ body {
   position: relative;
   overflow: hidden;
 }
+@media (max-width: 37.5em) {
+  .story__shape {
+    transform: translateX(-3rem) skewX(0);
+  }
+}
 .story__image {
   height: 100%;
   transform: translateX(-4rem) scale(1.4);
@@ -769,6 +881,11 @@ body {
 }
 .story__text {
   transform: skewX(12deg);
+}
+@media (max-width: 37.5em) {
+  .story__text {
+    transform: skewX(0);
+  }
 }
 .story__caption {
   position: absolute;
@@ -1161,14 +1278,20 @@ body {
 }
 
 .book {
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(/imgs/nat-10.jpg);
-  background-size: cover;
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../imgs/nat-10.jpg);
+  background-size: 100%;
   border-radius: 3px;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 75em) {
+  .book {
+    background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url(../imgs/nat-10.jpg);
+    background-size: cover;
+  }
 }
 @media (max-width: 56.25em) {
   .book {
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%, url(/imgs/nat-10.jpg));
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../imgs/nat-10.jpg);
   }
 }
 .book__form {
@@ -1176,12 +1299,12 @@ body {
   padding: 6rem;
 }
 @media (max-width: 75em) {
-  .book {
+  .book__form {
     width: 65%;
   }
 }
 @media (max-width: 56.25em) {
-  .book {
+  .book__form {
     width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */

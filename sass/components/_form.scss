@@ -16,8 +16,8 @@
     display: block;
     transition: all 0.3s;
 
-    &::-webkit-input-placeholder {
-      color: $color-grey-dark-2;
+    @include respond(tab-port) {
+      width: 100%;
     }
 
     &:focus {
@@ -28,6 +28,10 @@
 
     &:focus:invalid {
       border-bottom: 3px solid $color-secondary-dark;
+    }
+
+    &::-webkit-input-placeholder {
+      color: $color-grey-dark-2;
     }
   }
 
@@ -49,6 +53,11 @@
   &__radio-group {
     width: 49%;
     display: inline-block;
+
+    @include respond(tab-port) {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
   }
 
   &__radio-input {
