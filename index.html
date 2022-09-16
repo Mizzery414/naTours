@@ -33,7 +33,8 @@
                 </li>
 
                 <li class="navigation__item">
-                    <a href="#" class="navigation__link"><span>02</span>Your benefits</a>
+                    <a href="#" class="navigation__link"><span>02</span>Your
+                        benefits</a>
                 </li>
 
                 <li class="navigation__item">
@@ -88,11 +89,25 @@
                         praesentium quae velit sint delectus nemo aut! </p>
                     <a href="#" class="btn-text">Learn More &rarr;</a>
                 </div>
+
                 <div class="col-1-of-2">
                     <div class="composition">
-                        <img src="imgs/nat-1-large.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
+
+                        <img srcset="imgs/nat-1.jpg 300w, imgs/nat-1-large.jpg 1000w"
+                            sizes="(max-width: 56.5em) 20vw, (max-width: 37.5em) 30vw, 300px)" alt="Photo 1"
+                            class="composition__photo composition__photo--p1" src="imgs/nat-1-large.jpg">
+
+                        <img srcset="imgs/nat-2.jpg 300w, imgs/nat-2-large.jpg 1000w"
+                            sizes="(max-width: 56.5em) 20vw, (max-width: 37.5em) 30vw, 300px)" alt="Photo 2"
+                            class="composition__photo composition__photo--p2" src="imgs/nat-2-large.jpg">
+
+                        <img srcset="imgs/nat-3.jpg 300w, imgs/nat-3-large.jpg 1000w"
+                            sizes="(max-width: 56.5em) 20vw, (max-width: 37.5em) 30vw, 300px)" alt="Photo 3"
+                            class="composition__photo composition__photo--p3" src="imgs/nat-3-large.jpg">
+
+                        <!-- <img src="imgs/nat-1-large.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
                         <img src="imgs/nat-2-large.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
-                        <img src="imgs/nat-3-large.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">
+                        <img src="imgs/nat-3-large.jpg" alt="Photo 3" class="composition__photo composition__photo--p3"> -->
                     </div>
                 </div>
             </div>
@@ -268,6 +283,10 @@
                 <div class="story">
                     <figure class="story__shape">
                         <img src="imgs/nat-8.jpg" alt="person on a tour" class="story__image" />
+
+                        <!-- <img srcset="imgs/nat-8.jpg 300w, imgs/nat-8-large.jpg 1000w"
+                            sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px)" alt="person on a tour"
+                            src="imgs/nat-8.jpg" class="story__image"> -->
                         <figcaption class="story__caption">Mary Smith</figcaption>
                     </figure>
 
@@ -287,6 +306,10 @@
                 <div class="story">
                     <figure class="story__shape">
                         <img src="imgs/nat-9.jpg" alt="second person on a tour" class="story__image" />
+                        <!-- 
+                        <img srcset="imgs/nat-9.jpg 300w, imgs/nat-9-large.jpg 1000w"
+                            sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px)"
+                            alt="second person on a tour" src="imgs/nat-9.jpg" class="story__image"> -->
                         <figcaption class="story__caption">John Greene</figcaption>
                     </figure>
                     <div class="story__text">
@@ -357,7 +380,13 @@
 
     <footer class="footer">
         <div class="footer__logo-box">
-            <img src="imgs/logo-green-2x.png" alt="Full logo" class="footer__logo" />
+
+            <picture class="footer__logo">
+                <source srcset="imgs/logo-green-1x 1x, imgs/logo-green-2x.png 2x" media="(max-width: 600px)">
+                <img srcset="imgs/logo-green-1x.png 1x, imgs/logo-green-2x.png 2x" alt="Full logo"
+                    src="img/logo-green-2x.png">
+            </picture>
+
         </div>
         <div class="row">
             <div class="col-1-of-2">
