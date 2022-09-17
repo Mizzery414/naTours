@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/icon-font.css">
     <link rel="stylesheet" href="sass/main.css">
     <link rel="shortcut icon" type="image/png" href="imgs/favicon.png">
+
     <title>Natours | Exciting tours for adventurous people</title>
 </head>
 
@@ -510,6 +511,16 @@
     </section>
  -->
 
+    <script>
+        const navButton = document.getElementById("navi-toggle");
+        const navLinks = document.querySelectorAll(".navigation__link");
+
+        Array.from(navLinks).forEach(link =>
+            link.addEventListener("click", () => {
+                navButton.checked = false;
+            })
+        );
+    </script>
 </body>
 
 </html>
